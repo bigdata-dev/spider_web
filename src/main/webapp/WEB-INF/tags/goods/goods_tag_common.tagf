@@ -1,0 +1,20 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql"  prefix="sql"%>
+<%@ taglib tagdir="/WEB-INF/tags/goods" prefix="goods"%>
+<%@ taglib uri="/WEB-INF/tld/libs.tld" prefix="libs"%> 
+<c:set var="goods_path" value="${pageContext.request.contextPath}"></c:set>
+<link rel="stylesheet" href="${goods_path}/goods/Style.css" type="text/css">
+<link rel="stylesheet" href="${goods_path}/goods/tab.css" type="text/css">
+<link rel="stylesheet" href="${goods_path}/goods/headfoot.css" type="text/css">
+<link rel="stylesheet" href="${goods_path}/goods/core.css" type="text/css">
+<script src="${goods_path}/goods/jquery-1.6.1.js" type="text/javascript"></script>
+<script src="${goods_path}/goods/comm.js" type="text/javascript"></script>
+<script src="${goods_path}/goods/jquery.lazyload.js" type="text/javascript"></script>
+<script src="${goods_path}/goods/SimpleCore.js" type="text/javascript"></script>
+<script src="${goods_path}/goods/SimpleAutoComplete.js" type="text/javascript"></script>
+<script src="${goods_path}/goods/getxiala.js" type="text/javascript"></script>
+<script src="${goods_path}/goods/pj.js" type="text/javascript"></script>
+<script src="${goods_path}/js/goods/chart.js" type="text/javascript"></script>
+<script src="${goods_path}/js/echarts/esl.js"></script>
