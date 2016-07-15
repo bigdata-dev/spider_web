@@ -17,19 +17,19 @@ import javax.servlet.ServletContextListener;
  * Created by tonye0115 on 2016/7/13.
  */
 public class MyListener implements ServletContextListener {
-    private MyThread myThread;
+    private SolrIndexThread solrIndexThread;
 
     public void contextDestroyed(ServletContextEvent e) {
-        if (myThread != null && myThread.isInterrupted()) {
-            myThread.interrupt();
+        if (solrIndexThread != null && solrIndexThread.isInterrupted()) {
+            solrIndexThread.interrupt();
         }
     }
 
     public void contextInitialized(ServletContextEvent e) {
         String str = null;
-        if (str == null && myThread == null) {
-            myThread = new MyThread();
-            myThread.start(); // servlet 上下文初始化时启动 socket
+        if (str == null && solrIndexThread == null) {
+            solrIndexThread = new SolrIndexThread();
+            solrIndexThread.start(); // servlet 上下文初始化时启动 socket
         }
     }
 
@@ -37,15 +37,16 @@ public class MyListener implements ServletContextListener {
 }
 
 
-class MyThread extends Thread {
+class SolrIndexThread extends Thread {
     static final Logger logger = LoggerFactory.getLogger(SolrIndex.class);
     private static final String SOLR_INDEX = "solr_index";
     static RedisUtils redis = new RedisUtils();
     public void run() {
-        final String[] goodsId = {""};
+        String[] goodsId = {""};
         final HbaseUtils hbaseUtils = new HbaseUtils();
-        goodsId[0] = redis.poll(SOLR_INDEX);
+
         while (!this.isInterrupted()) {// 线程未中断执行循环
+            goodsId[0] = redis.poll(SOLR_INDEX);
             if(StringUtils.isNotBlank(goodsId[0])){
                 Goods goods = hbaseUtils.get(HbaseUtils.TABLE_NAME, goodsId[0]);
                 if(goods==null){
@@ -64,7 +65,6 @@ class MyThread extends Thread {
                         e.printStackTrace();
                     }
                 }
-                goodsId[0] = redis.poll(SOLR_INDEX);
             }else{
                 System.out.println("暂时没有需要索引的数据,休息一会");
                 SleepUtils.sleep(5000);
