@@ -1,11 +1,11 @@
-package cn.crxy.spider.web.listener;
+package com.ryxc.spider.web.listener;
 
-import cn.crxy.spider.web.domain.Goods;
-import cn.crxy.spider.web.index.SolrIndex;
-import cn.crxy.spider.web.utils.HbaseUtils;
-import cn.crxy.spider.web.utils.RedisUtils;
-import cn.crxy.spider.web.utils.SleepUtils;
-import cn.crxy.spider.web.utils.SolrUtil;
+import com.ryxc.spider.web.domain.Goods;
+import com.ryxc.spider.web.index.SolrIndex;
+import com.ryxc.spider.web.utils.HbaseUtils;
+import com.ryxc.spider.web.utils.RedisUtils;
+import com.ryxc.spider.web.utils.SleepUtils;
+import com.ryxc.spider.web.utils.SolrUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

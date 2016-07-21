@@ -1,6 +1,6 @@
-package cn.crxy.spider.web.utils;
+package com.ryxc.spider.web.utils;
 
-import cn.crxy.spider.web.domain.Goods;
+import com.ryxc.spider.web.domain.Goods;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;

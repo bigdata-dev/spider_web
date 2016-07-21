@@ -66,6 +66,6 @@
 	</error-page>
 
 	<listener>
-		<listener-class>cn.crxy.spider.web.listener.MyListener</listener-class>
+		<listener-class>com.ryxc.spider.web.listener.MyListener</listener-class>
 	</listener>
 </web-app>

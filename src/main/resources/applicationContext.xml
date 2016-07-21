@@ -23,7 +23,7 @@
 
 	
 
-	<bean class="cn.crxy.spider.web.SpringContextHolder"
+	<bean class="com.ryxc.spider.web.SpringContextHolder"
 		lazy-init="false" />
 	<bean id="freeMarkerConfigurer"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">

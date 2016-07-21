@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.utils;
+package com.ryxc.spider.web.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

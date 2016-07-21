@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.utils;
+package com.ryxc.spider.web.utils;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

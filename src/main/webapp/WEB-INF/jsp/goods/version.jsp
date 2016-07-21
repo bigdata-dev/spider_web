@@ -1,7 +1,7 @@
 <%@page import="org.apache.commons.lang3.StringUtils"%>
 <%@page import="org.json.JSONObject"%>
 <%@page import="org.json.JSONArray"%>
-<%@page import="cn.crxy.spider.web.domain.Goods"%>
+<%@page import="com.ryxc.spider.web.domain.Goods"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -18,13 +18,13 @@
 		<div>
 			<table>
 				<tr>
-					<td><font color="red">2015-01-05：更新说明</font><br/>
+					<td><font color="red">2016-07-05：更新说明</font><br/>
 						1：后台solr单独建立索引。<br/>
 						2：前台添加价格波动趋势<br/>
 					</td>
 				</tr>
 				<tr>
-					<td><font color="red">2014-12-13：更新说明</font><br/>
+					<td><font color="red">2016-07-13：更新说明</font><br/>
 						1：爬取京东，易迅的手机数据。<br/>
 						2：前台solr查询。<br/>
 						3：商品信息对比。<br/>

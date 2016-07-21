@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.utils;
+package com.ryxc.spider.web.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import org.apache.hadoop.hbase.filter.RegexStringComparator;
 import org.apache.hadoop.hbase.filter.RowFilter;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import cn.crxy.spider.web.domain.Goods;
+import com.ryxc.spider.web.domain.Goods;
 
 public class HbaseUtils {
 	

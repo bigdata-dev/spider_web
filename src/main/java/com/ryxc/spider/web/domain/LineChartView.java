@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.domain;
+package com.ryxc.spider.web.domain;
 
 import java.util.ArrayList;
 import java.util.HashMap;

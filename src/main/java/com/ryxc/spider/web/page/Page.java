@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.page;
+package com.ryxc.spider.web.page;
 
 import java.io.Serializable;
 

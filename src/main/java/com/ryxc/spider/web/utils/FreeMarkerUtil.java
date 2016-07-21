@@ -1,15 +1,14 @@
-package cn.crxy.spider.web.utils;
+package com.ryxc.spider.web.utils;
+
+import com.ryxc.spider.web.SpringContextHolder;
+import freemarker.cache.StringTemplateLoader;
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Map;
-
-import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
-
-import cn.crxy.spider.web.SpringContextHolder;
-import freemarker.cache.StringTemplateLoader;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
 
 public class FreeMarkerUtil {
 	

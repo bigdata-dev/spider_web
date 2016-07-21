@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.domain;
+package com.ryxc.spider.web.domain;
 
 public abstract class ChartView {
 	public String text;//主标题

@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.utils;
+package com.ryxc.spider.web.utils;
 
 public class SleepUtils {
 	public static void sleep(long millin){

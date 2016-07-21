@@ -1,7 +1,7 @@
 <%@page import="org.apache.commons.lang3.StringUtils"%>
 <%@page import="org.json.JSONObject"%>
 <%@page import="org.json.JSONArray"%>
-<%@page import="cn.crxy.spider.web.domain.Goods"%>
+<%@page import="com.ryxc.spider.web.domain.Goods"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>

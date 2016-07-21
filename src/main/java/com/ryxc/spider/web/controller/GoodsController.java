@@ -1,4 +1,4 @@
-package cn.crxy.spider.web.controller;
+package com.ryxc.spider.web.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,13 +19,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.crxy.spider.web.domain.ChartView;
-import cn.crxy.spider.web.domain.LineChartView;
-import cn.crxy.spider.web.page.Page;
-import cn.crxy.spider.web.domain.Goods;
-import cn.crxy.spider.web.utils.HbaseUtils;
-import cn.crxy.spider.web.utils.SolrUtil;
-import cn.crxy.spider.web.utils.FreeMarkerUtil;
+import com.ryxc.spider.web.domain.ChartView;
+import com.ryxc.spider.web.domain.LineChartView;
+import com.ryxc.spider.web.page.Page;
+import com.ryxc.spider.web.domain.Goods;
+import com.ryxc.spider.web.utils.HbaseUtils;
+import com.ryxc.spider.web.utils.SolrUtil;
+import com.ryxc.spider.web.utils.FreeMarkerUtil;
 
 @Controller
 @RequestMapping("goods")
