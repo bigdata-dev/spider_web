@@ -61,8 +61,8 @@ public class HbaseUtils {
 	public HbaseUtils(){
 		System.out.println("初始化hbase配置信息.");
 		conf = new Configuration();
-		conf.set("hbase.zookeeper.quorum", "ryxc166:2181");
-		conf.set("hbase.rootdir", "hdfs://nameservice1/hbase");
+		conf.set("hbase.zookeeper.quorum", "192.168.116.161:2181");
+		conf.set("hbase.rootdir", "hdfs://192.168.116.161:8020/hbase");
 		try {
 			admin = new HBaseAdmin(conf);
 		} catch (IOException e) {

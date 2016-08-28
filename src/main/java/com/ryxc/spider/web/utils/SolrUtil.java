@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class SolrUtil {
 	static final Logger logger = LoggerFactory.getLogger(SolrUtil.class);
-	private static final String SOLR_URL = "http://ryxc166:8983/solr"; // 服务器地址
+	private static final String SOLR_URL = "http://192.168.116.166:8983/solr"; // 服务器地址
 	private static HttpSolrServer server = null;
 	static{
 		try {

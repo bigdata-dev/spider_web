@@ -12,7 +12,7 @@ public class RedisUtils {
 		poolConfig.setMaxTotal(100);
 		poolConfig.setMaxWaitMillis(10000);
 		poolConfig.setTestOnBorrow(true);
-		jedisPool = new JedisPool(poolConfig, "192.168.116.166", 6379);
+		jedisPool = new JedisPool(poolConfig, "192.168.116.166", 6379,60000,"reids",2);
 	}
 	public void add(String lowKey, String url) {
 		Jedis resource = jedisPool.getResource();
